@@ -1,0 +1,32 @@
+Criar ambiente virtual para o python:
+    python -m venv venv
+
+Ativar o ambiente virtual:
+    .\venv\Scripts\acitvate
+
+Instalar o Django e suas dependencias:
+    pip install Django
+    
+Criar um ficheiro com as versoes do Djando e as suas dependencias:
+    pip freeze > requirements.txt
+
+Criar o projeto Django:
+    django-admin startproject nomeProjeto . 
+
+Criar uma app Django:
+    django-admin startapp nomeApp
+
+Rodar o projeto:
+    python manage.py runserver
+
+Criar as migrations:
+    python manage.py makemigrations
+
+Aplicar migrations:
+    python manage.py migrate
+
+Criar Admin:
+    python manage.py createsuperuser
+
+Reunir os static das pass em um sitio so para produção:
+    python manage.py collectstatic
